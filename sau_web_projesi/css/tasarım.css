@@ -32,3 +32,16 @@ body {
 .hobby-card:hover {
     transform: translateY(-5px);
 }
+/* Slider resimleri */
+.carousel-item img {
+    height: 500px; 
+    object-fit: cover; 
+    width: 100%;
+}
+
+/* Mirasımız kısmındaki madalya resmi için */
+.card-img-custom {
+    height: 300px;
+    object-fit: contain; 
+    background-color: #f8f9fa; 
+}
