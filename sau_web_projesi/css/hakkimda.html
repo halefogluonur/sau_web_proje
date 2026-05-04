@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımda | Onur Halefoğlu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tasarım.css">
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">B251210073</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-content="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
                     <li class="nav-item"><a class="nav-link active" href="hakkimda.html">Hakkımda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Şehrim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
                 </ul>
             </div>
         </div>
@@ -30,19 +31,18 @@
     <header class="hero-section text-center">
         <div class="container">
             <img src="../img/ben.jpeg" alt="Profil Resmi"
-             class="profile-img mb-3" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;">
+             class="profile-img mb-3" style="width: 150px; height: 150px; object-fit: cover;">
             <h1 class="display-5">Onur Halefoğlu</h1>
             <p class="lead">Bilgisayar Mühendisliği Öğrencisi</p>
         </div>
     </header>
 
-    
     <main class="container my-5">
         <div class="row">
             <div class="col-md-8">
                 <h2>Ben Kimim?</h2>
                 <p>Sakarya Üniversitesi Bilgisayar Mühendisliği 1. sınıf öğrencisiyim. Yazılım dünyasına C#, C++ ve web teknolojileri ile adım attım.</p>
-                
+
                 <h3 class="mt-4">Hobilerim & Etkinlikler</h3>
                 <div class="row g-3">
                     <div class="col-sm-6">
@@ -59,16 +59,20 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-md-4">
                 <div class="p-3 bg-light rounded shadow-sm">
-                    <h4>Kahramanmaraştan</h4>
+                    <h4>Kahramanmaraş'tan</h4>
                     <img src="../img/madalya.jpg" class="img-fluid rounded mb-2" alt="Şehir Resmi">
                     <p class="small text-muted text-center">Sevdiğim bir şehirden kare</p>
                 </div>
             </div>
         </div>
     </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2026 Onur Halefoğlu - Web Teknolojileri Projesi</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
