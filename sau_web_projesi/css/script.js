@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             const gotContainer = document.getElementById('got-container');
             gotContainer.innerHTML = '';
-            // İlk 8 karakteri çekelim
             data.slice(0, 52).forEach(char => {
                 gotContainer.innerHTML += createCard(char.fullName, char.title, char.imageUrl, 'border-warning');
             });
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             const hpContainer = document.getElementById('hp-container');
             hpContainer.innerHTML = '';
-            // İlk 8 karakteri çekelim (resmi olanları filtreleyebilirsin)
             data.slice(0, 18).forEach(char => {
                 const img = char.image || "https://via.placeholder.com/300x400?text=No+Image";
                 hpContainer.innerHTML += createCard(char.name, char.house || "Büyücü", img, 'border-info');

@@ -5,13 +5,28 @@ body {
 }
 
 /* Navbar */
-.navbar {
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.navbar.bg-dark {
+    background: linear-gradient(90deg, #0c1b33 0%, #1a3a6b 60%, #c62828 100%) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.navbar.bg-dark .nav-link {
+    transition: color 0.3s;
+}
+
+.navbar.bg-dark .nav-link:hover,
+.navbar.bg-dark .nav-link.active {
+    color: #ffc107 !important;
+}
+
+.navbar.bg-dark .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 /* Hero Bölümü */
 .hero-section {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    background: linear-gradient(135deg, #0c1b33 0%, #1a3a6b 50%, #c62828 100%);
     color: white;
     padding: 100px 0;
 }
