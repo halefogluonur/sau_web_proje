@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımda | Onur Halefoğlu</title>
+    <!-- Bootstrap ve tasarım.css bağlantıları -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="tasarım.css">
 </head>
 <body>
 
+    <!-- Navigasyon menüsü -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">B251210073</a>
@@ -29,6 +31,7 @@
         </div>
     </nav>
 
+    <!-- Hero bölümü - profil fotoğrafım -->
     <header class="hero-section text-center">
         <div class="container">
             <img src="../img/ben.jpeg" alt="Profil Resmi"
@@ -38,48 +41,134 @@
         </div>
     </header>
 
+    <!-- Ana içerik -->
     <main class="container my-5">
         <div class="row g-4">
+            <!-- Sol sütun: video ve biyografi -->
             <div class="col-md-8">
 
+                <!-- Kendi videom - 16:9 oranında gömülü video oynatıcı -->
                 <div class="ratio ratio-16x9 mb-4 shadow rounded overflow-hidden">
                     <video controls>
                         <source src="../img/onur.mp4" type="video/mp4">
-                        Tarayıcınız video etiketini desteklemiyor.
                     </video>
                 </div>
 
+                <!-- Biyografi metni - kendimi tanıttığım bölüm -->
                 <div class="p-4 bg-light rounded shadow-sm">
-                    <h2 class="mb-4 border-bottom pb-2">Ben Kimim?</h2>
-                    <p>Onur Halefoğlu, 23 Haziran 2006 tarihinde bir cuma günü Kahramanmaraş'ta dünyaya geldi ve memur bir ailenin disipliniyle büyüdü. Çocukluk yıllarından itibaren sporla, özellikle de büyük bir tutkuyla bağlı olduğu futbolla iç içe bir hayat sürerken en büyük hayali teknik direktör olmaktı. Ancak 2023 yılının Şubat ayında yaşanan deprem felaketi hayatında büyük bir dönüm noktası oldu ve 6 Mart 2023 tarihinde ailesiyle birlikte Sakarya'ya zorunlu olarak göç etti. Burada Sakarya Anadolu Lisesi'ne devam ederek 2024 yılında mezuniyetini gerçekleştirdi.</p>
+                    <h2 class="mb-4 border-bottom pb-2">Onur Halefoğlu kimdir?</h2>
+                    <p>23 Haziran 2006'da Kahramanmaraş'ta doğdum. Memur bir ailenin disipliniyle büyüdüm. Küçüklüğümden beri sporla, özellikle de futbolla çok ilgiliydim, hatta en büyük hayalim teknik direktör olmaktı. Ancak 2023 Şubat'ındaki deprem felaketi her şeyi değiştirdi. 6 Mart 2023'te ailemle Sakarya'ya taşınmak zorunda kaldık. Sakarya Anadolu Lisesi'ne geçtim ve 2024'te oradan mezun oldum. İleride önemli işler başarmak ve ülkede tanınan biri olmak istiyordum. Bu yüzden 2025 Eylül'ünde Sakarya Üniversitesi Bilgisayar Mühendisliği'ne girdim. İlk başta bu bölüme şaşırmıştım ve alışmakta zorlandım ama zamanla planlarıma ne kadar uyduğunu fark ettim, şu an gidişattan memnunum. Şu sıralar yapay zeka ve veri bilimi üzerine çalışmayı hedefliyorum. Kendime güveniyorum; en büyük amacım ileride ismimi duyuracak başarılara imza atmak ve akıllarda kalıcı olmak.</p>
+                </div>
 
-                    <p>Bir gün ülkenin önemli isimlerinden biri olma hedefi doğrultusunda üniversite tercihlerini yapan Onur, 2025 yılının Eylül ayında Sakarya Üniversitesi Bilgisayar Mühendisliği bölümüne girdi. Başlarda bu tercihe şaşırsa ve kabullenmekte zorlansa da zamanla bölümün kendi planları için ne kadar uygun olduğunu fark ederek bu yolda ilerlemekten memnuniyet duydu. Şimdilerde yapay zekanın etkin kullanımı ve veri bilimi gibi alanları keşfederek bu teknolojiler üzerinde çalışmalar yapmayı amaçlıyor. Kendine olan sarsılmaz inancıyla hayallerinin peşinden giden Onur'un hayattaki en büyük arzusu, ismini hafızalara kazıyacak başarılara imza atmaktır.</p>
+                <!-- En Sevdiğim Videolar - YouTube Shorts thumbnaill'leri -->
+                <div class="p-4 bg-light rounded shadow-sm mt-4">
+                    <h2 class="mb-4 border-bottom pb-2">En Sevdiğim Videolar</h2>
+                    <div class="row g-3">
+                        <!-- Video 1 -->
+                        <div class="col-md-4">
+                            <a href="https://youtube.com/shorts/iE2mPkfARzM" target="_blank" class="text-decoration-none">
+                                <div class="card hobby-card border-0 overflow-hidden shadow-sm">
+                                    <img src="https://img.youtube.com/vi/iE2mPkfARzM/hqdefault.jpg" class="w-100" alt="Video 1" style="height: 250px; object-fit: cover;">
+                                    <div class="p-2 text-center bg-dark text-white">
+                                        <small class="fw-bold">▶ Videom #1</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="col-md-4">
+                            <a href="https://youtube.com/shorts/b5M4h7kFTio" target="_blank" class="text-decoration-none">
+                                <div class="card hobby-card border-0 overflow-hidden shadow-sm">
+                                    <img src="https://img.youtube.com/vi/b5M4h7kFTio/hqdefault.jpg" class="w-100" alt="Video 2" style="height: 250px; object-fit: cover;">
+                                    <div class="p-2 text-center bg-dark text-white">
+                                        <small class="fw-bold">▶ Videom #2</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Video 3 -->
+                        <div class="col-md-4">
+                            <a href="https://youtube.com/shorts/wPdnDvRmVAQ" target="_blank" class="text-decoration-none">
+                                <div class="card hobby-card border-0 overflow-hidden shadow-sm">
+                                    <img src="https://img.youtube.com/vi/wPdnDvRmVAQ/hqdefault.jpg" class="w-100" alt="Video 3" style="height: 250px; object-fit: cover;">
+                                    <div class="p-2 text-center bg-dark text-white">
+                                        <small class="fw-bold">▶ Videom #3</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
+            <!-- Sağ sütun: şehir resmi ve hobiler -->
             <div class="col-md-4">
+                <!-- Memleket görseli -->
                 <div class="p-3 bg-light rounded shadow-sm">
                     <h4>Kahramanmaraş'tan</h4>
                     <img src="../img/madalya.jpg" class="img-fluid rounded mb-2" alt="Şehir Resmi">
-                    <p class="small text-muted text-center">Sevdiğim bir şehirden kare</p>
+                    <p class="small text-muted text-center">Memleketim'den kare</p>
                 </div>
 
+                <!-- Hobilerim - Dizi & Film posterleri -->
                 <div class="p-3 bg-light rounded shadow-sm mt-4">
                     <h4>Hobilerim</h4>
-                    <div class="card hobby-card p-3 mb-2">
-                        <h5>🎮 Oyun Dünyası</h5>
-                        <p>Uncharted 4 en sevdiğim oyundur. Keza Tomb Raider serisi de</p>
-                    </div>
-                    <div class="card hobby-card p-3">
-                        <h5>💻 Kodlama</h5>
-                        <p>Özellikle nesne yönelimli programlama üzerine kendimi geliştiriyorum.</p>
+                    <div class="mb-3">
+                        <h5 class="border-bottom pb-1">Dizi & Film</h5>
+                        <div class="row g-2">
+                            <!-- Harry Potter posteri -->
+                            <div class="col-6">
+                                <a href="https://www.imdb.com/title/tt1201607/" target="_blank" class="text-decoration-none">
+                                    <div class="card hobby-card border-0 overflow-hidden">
+                                        <img src="https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UX1000_.jpg" class="w-100" alt="Harry Potter" style="height: 180px; object-fit: cover;">
+                                        <div class="p-2 text-center">
+                                            <small class="fw-bold">Harry Potter</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Yüzüklerin Efendisi posteri -->
+                            <div class="col-6">
+                                <a href="https://www.imdb.com/title/tt0120737/" target="_blank" class="text-decoration-none">
+                                    <div class="card hobby-card border-0 overflow-hidden">
+                                        <img src="https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_FMjpg_UX1000_.jpg" class="w-100" alt="Yüzüklerin Efendisi" style="height: 180px; object-fit: cover;">
+                                        <div class="p-2 text-center">
+                                            <small class="fw-bold">Yüzüklerin Efendisi</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Game of Thrones posteri -->
+                            <div class="col-6">
+                                <a href="https://www.imdb.com/title/tt0944947/" target="_blank" class="text-decoration-none">
+                                    <div class="card hobby-card border-0 overflow-hidden">
+                                        <img src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_FMjpg_UX1000_.jpg" class="w-100" alt="Game of Thrones" style="height: 180px; object-fit: cover;">
+                                        <div class="p-2 text-center">
+                                            <small class="fw-bold">Game of Thrones</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Gibi posteri -->
+                            <div class="col-6">
+                                <a href="https://www.imdb.com/title/tt13675832/" target="_blank" class="text-decoration-none">
+                                    <div class="card hobby-card border-0 overflow-hidden">
+                                        <img src="https://image.tmdb.org/t/p/w500/y1uhSlwcjuzOTxviRDqiMkExnVv.jpg" class="w-100" alt="Gibi" style="height: 180px; object-fit: cover;">
+                                        <div class="p-2 text-center">
+                                            <small class="fw-bold">Gibi</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <p>&copy; 2026 Onur Halefoğlu - Web Teknolojileri Projesi</p>
     </footer>

@@ -76,6 +76,9 @@
                     <option value="">Seçiniz...</option>
                     <option value="got">Game of Thrones</option>
                     <option value="hp">Harry Potter</option>
+                    <option value="gibi">Gibi</option>
+                    <option value="lotr">Yüzüklerin Efendisi</option>
+                    <option value="rdr">Red Dead Redemption</option>
                     <option value="valorant">Valorant</option>
                 </select>
             </div>
@@ -94,6 +97,10 @@
                     <input class="form-check-input" type="checkbox" v-model="form.hobiler" value="Spor" name="hobiler[]">
                     <label class="form-check-label">Spor</label>
                 </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" v-model="form.hobiler" value="Film&Dizi" name="hobiler[]">
+                    <label class="form-check-label">Film&Dizi</label>
+                </div>
             </div>
 
             <div class="row">
@@ -106,10 +113,6 @@
                     <input type="file" class="form-control" name="dosya">
                 </div>
             </div>
-            <div class="mb-3 d-none">
-            <input type="submit" id="realSubmit" value="Gönder">
-            </div>
-
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button type="button" class="btn btn-primary" onclick="validateJS()">JS ile Denetle</button>
                 <button type="button" class="btn btn-success" @click="validateVue">Vue.js ile Denetle</button>
