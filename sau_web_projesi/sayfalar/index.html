@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onur Halefoğlu</title>
+    <!-- Bootstrap 5 ve Font Awesome CDN'den yükleniyor, harici CSS dosyam tasarım.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="tasarım.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigasyon menüsü - tüm sayfalarda aynı, sticky-top ile yukarıda sabitleniyor -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-code me-2"></i>B251210073</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkimda.html">Hakkımda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Giriş Yap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero bölümü - profil fotoğrafım, adım ve kısa tanıtım -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <img src="../img/ben.jpeg" alt="Profil Resmi"
+             class="profile-img mb-3" style="width: 160px; height: 160px; object-fit: cover;">
+            <h1 class="display-4 fw-bold">Merhaba, Ben Onur</h1>
+            <p class="lead">Bilgisayar Mühendisliği 1. Sınıf Öğrencisi</p>
+            <!-- GitHub hesabıma ve hakkımda sayfama yönlendiren butonlar -->
+            <a href="https://github.com/halefogluonur" class="btn btn-light btn-lg me-2"><i class="fab fa-github me-2"></i>Çalışmalarım</a>
+            <a href="hakkimda.html" class="btn btn-outline-light btn-lg"><i class="fas fa-user me-2"></i>Beni Tanı</a>
+        </div>
+    </header>
+
+    <!-- İstatistik kartları - proje sayısı, programlama dilleri, üniversite yılı -->
+    <section class="container my-5 fade-in">
+        <div class="row text-center g-4">
+            <div class="col-md-4 col-6">
+                <div class="p-4 bg-light rounded shadow-sm h-100 stat-card">
+                    <i class="fas fa-laptop-code fs-1 text-primary mb-2"></i>
+                    <h3 class="fw-bold">5+</h3>
+                    <p class="text-muted mb-0">Proje</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-6">
+                <div class="p-4 bg-light rounded shadow-sm h-100 stat-card">
+                    <i class="fas fa-code fs-1 text-success mb-2"></i>
+                    <h3 class="fw-bold">3</h3>
+                    <p class="text-muted mb-0">Programlama Dili</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-6">
+                <div class="p-4 bg-light rounded shadow-sm h-100 stat-card">
+                    <i class="fas fa-graduation-cap fs-1 text-warning mb-2"></i>
+                    <h3 class="fw-bold">1</h3>
+                    <p class="text-muted mb-0">Üniversite Yılı</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projelerim - GitHub'da yayınladığım projelerin kartları -->
+    <section id="projects" class="container my-5">
+        <h2 class="text-center mb-4">Projelerim</h2>
+        <div class="row g-4">
+            <!-- C# Projeleri kartı -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column text-center">
+                        <i class="fab fa-microsoft fs-1 text-primary mb-3"></i>
+                        <h5 class="card-title">C# Projelerim</h5>
+                        <p class="card-text flex-grow-1 text-muted">Windows Forms kullanarak geliştirdiğim uygulamalar</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/halefogluonur/birim_donustur" target="_blank" class="btn btn-sm btn-dark me-1"><i class="fab fa-github"></i> Birim Dönüştür</a>
+                            <a href="https://github.com/halefogluonur/paint_odevi" target="_blank" class="btn btn-sm btn-dark"><i class="fab fa-github"></i> Paint</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Web Projesi kartı -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column text-center">
+                        <i class="fas fa-globe fs-1 text-success mb-3"></i>
+                        <h5 class="card-title">Web Projem</h5>
+                        <p class="card-text flex-grow-1 text-muted">HTML, CSS ve Bootstrap ile hazırladığım kişisel web sitesi</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/halefogluonur/sau_web_proje" target="_blank" class="btn btn-sm btn-dark"><i class="fab fa-github"></i> İncele</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- C++ Algoritmalar kartı -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body d-flex flex-column text-center">
+                        <i class="fas fa-terminal fs-1 text-warning mb-3"></i>
+                        <h5 class="card-title">C++ Algoritmalar</h5>
+                        <p class="card-text flex-grow-1 text-muted">Veri yapıları ve algoritma geliştirme çalışmaları</p>
+                        <div class="mt-auto">
+                            <a href="https://github.com/halefogluonur/c-giri-devi" target="_blank" class="btn btn-sm btn-dark"><i class="fab fa-github"></i> İncele</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - telif hakkı ve sosyal medya bağlantıları -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2026 Onur Halefoğlu - Web Teknolojileri Projesi</p>
+        <div class="mt-2">
+            <a href="https://github.com/halefogluonur" target="_blank" class="text-white mx-2 fs-4"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/onur-halefoğlu-646a69389" target="_blank" class="text-white mx-2 fs-4"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scroll ile görünür olan yukarı çık butonu -->
+    <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS ve scroll olayını dinleyen küçük script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('back-to-top');
+            btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>

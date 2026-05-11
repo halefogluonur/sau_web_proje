@@ -1,0 +1,254 @@
+/* TASARIM.CSS */
+
+/* Sayfa içinde gezinti yaparken yumuşak kaydırma olsun diye scroll-behavior kullandım */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Projede genel font olarak Segoe UI kullandım, Bootstrap'in varsayılanından daha modern duruyor */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Anasayfadaki istatistik ve yetenek bölümlerinin yüklenirken aşağıdan yukarı doğru gelmesi için animasyon ekledim */
+.fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Her section'un sırayla açılması için gecikme verdim */
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.4s; }
+.fade-in:nth-child(4) { animation-delay: 0.6s; }
+
+/* Yukarı çık butonu - sayfa aşağı kaydırılınca sağ altta görünür, kırmızı renkli ve hover'da laciverte döner */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #c62828;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+
+#back-to-top:hover {
+    background: #0c1b33;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Navbar'ı lacivertten kırmızıya doğru giden gradient yaptım, sayfanın temasına uygun olsun diye */
+.navbar.bg-dark {
+    background: linear-gradient(90deg, #0c1b33 0%, #1a3a6b 60%, #c62828 100%) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Navbar linklerine hover efekti ekledim, üzerine gelince sarı renge dönüyor */
+.navbar.bg-dark .nav-link {
+    transition: color 0.3s;
+}
+
+.navbar.bg-dark .nav-link:hover,
+.navbar.bg-dark .nav-link.active {
+    color: #ffc107 !important;
+}
+
+.navbar.bg-dark .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Hero bölümü - ana sayfanın ve diğer sayfaların üst kısmındaki büyük banner */
+.hero-section {
+    background: linear-gradient(135deg, #0c1b33 0%, #1a3a6b 50%, #c62828 100%);
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero'nun arka planında hareket eden bir ışık efekti olsun istedim */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 60%);
+    animation: heroGlow 8s ease-in-out infinite;
+}
+
+@keyframes heroGlow {
+    0%, 100% { transform: translate(0, 0); }
+    50%      { transform: translate(30px, 30px); }
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hero başlığına gölge ekleyerek daha okunabilir yaptım */
+.hero-section h1 {
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero-section .lead {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* Profil fotoğrafının hero içinde yukarı aşağı hareket etmesi için animasyon */
+.hero-section .profile-img {
+    animation: profileFloat 3s ease-in-out infinite;
+}
+
+@keyframes profileFloat {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+}
+
+.hero-section .btn {
+    transition: all 0.3s;
+}
+
+.hero-section .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Profil resmi yuvarlak olsun, beyaz çerçevesi olsun istedim */
+.profile-img {
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Anasayfadaki istatistik kartları - üzerine gelince yükselme ve icon dönme efekti */
+.stat-card {
+    transition: all 0.4s;
+    cursor: default;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15) !important;
+}
+
+.stat-card i {
+    transition: transform 0.4s;
+}
+
+.stat-card:hover i {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+/* Yetenek kartları - hover'da sol kenarı kırmızıya döner ve sağa kayar */
+.skill-card {
+    transition: all 0.3s;
+    border-left: 4px solid transparent;
+}
+
+.skill-card:hover {
+    transform: translateX(5px);
+    border-left-color: #c62828;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+
+.progress {
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 1.5s ease;
+}
+
+/* Genel kart stili - tüm sayfalardaki kartlar hover'da yükselsin diye ekledim */
+.card {
+    transition: all 0.4s;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
+
+.card i.fs-1 {
+    transition: transform 0.4s;
+}
+
+.card:hover i.fs-1 {
+    transform: scale(1.15);
+}
+
+/* Hakkımda sayfasındaki hobi kartları */
+.hobby-card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Slider resimleri - tüm resimler aynı boyutta dursun diye height ve object-fit verdim */
+.carousel-item img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+.card-img-custom {
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+/* Şehrim sayfasının üst banner'ı - üstüne siyah gradiyent ekleyerek yazıyı okunabilir yaptım */
+.city-header {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/maraskalesi.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+/* İlgi Alanlarım sayfasında koyu bir tema kullandım, GoT havası versin diye */
+.bg-got {
+    background-color: #1a1a1a;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Footer her zaman en altta kalsın diye margin-top: auto verdim */
+footer {
+    margin-top: auto;
+}
